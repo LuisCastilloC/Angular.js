@@ -30,13 +30,13 @@ export class StocksService {
   return this.get();
   }
   // Elimina una acción de la lista
-  remove(stock) {
+  remove(stock: string) {
   stocks.splice(stocks.indexOf(stock), 1);
   return this.get();
   }
   // Invoca a un servicio HttpClient para cargar los valores
   // de las acciones de un API
-  load(symbols) {
+  load(symbols: any[]) {
   if (!symbols) {
   symbols = ['AAPL'];
   }
