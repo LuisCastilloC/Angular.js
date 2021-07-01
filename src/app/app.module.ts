@@ -1,3 +1,4 @@
+import { AppRoutes } from './app.routes';
 import { StocksService } from './services/stocks.service';
 import { HttpClientModule } from '@angular/common/http';
 
@@ -19,7 +20,8 @@ import { FormsModule } from '@angular/forms';
   imports: [
     BrowserModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    AppRoutes
   ],
   providers: [StocksService],
   bootstrap: [AppComponent]
